@@ -64,6 +64,7 @@ class DoublyLinkedList:
             # We know that the list is populated
             self.head.insert_before(value)
             self.head = self.head.prev
+        return self.head
 
     """Removes the List's current head node, making the
     current head's next node the new head of the List.
