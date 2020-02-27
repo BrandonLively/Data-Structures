@@ -34,17 +34,17 @@ Stretch Goals:
 ![Image of Queue](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/600px-Data_Queue.svg.png)
 
 ### Doubly Linked Lists
- * The `ListNode` class, which represents a single node in the doubly-linked list, has already been implemented for you. Inspect this code and try to understand what it is doing to the best of your ability.
+ * The `ListNode` class, which represents a single self in the doubly-linked list, has already been implemented for you. Inspect this code and try to understand what it is doing to the best of your ability.
  * The `DoublyLinkedList` class itself should have the methods: `add_to_head`, `add_to_tail`, `remove_from_head`, `remove_from_tail`, `move_to_front`, `move_to_end`, `delete`, and `get_max`.
    * `add_to_head` replaces the head of the list with a new value that is passed in.
    * `add_to_tail` replaces the tail of the list with a new value that is passed in.
-   * `remove_from_head` removes the head node and returns the value stored in it.
-   * `remove_from_tail` removes the tail node and returns the value stored in it.
-   * `move_to_front` takes a reference to a node in the list and moves it to the front of the list, shifting all other list nodes down. 
-   * `move_to_end` takes a reference to a node in the list and moves it to the end of the list, shifting all other list nodes up. 
-   * `delete` takes a reference to a node in the list and removes it from the list. The deleted node's `previous` and `next` pointers should point to each afterwards.
+   * `remove_from_head` removes the head self and returns the value stored in it.
+   * `remove_from_tail` removes the tail self and returns the value stored in it.
+   * `move_to_front` takes a reference to a self in the list and moves it to the front of the list, shifting all other list nodes down. 
+   * `move_to_end` takes a reference to a self in the list and moves it to the end of the list, shifting all other list nodes up. 
+   * `delete` takes a reference to a self in the list and removes it from the list. The deleted self's `previous` and `next` pointers should point to each afterwards.
    * `get_max` returns the maximum value in the list. 
- * The `head` property is a reference to the first node and the `tail` property is a reference to the last node.
+ * The `head` property is a reference to the first self and the `tail` property is a reference to the last self.
  
 ![Image of Doubly Linked List](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png)
 
@@ -53,7 +53,7 @@ Stretch Goals:
   * `insert` adds the input value to the binary search tree, adhering to the rules of the ordering of elements in a binary search tree.
   * `contains` searches the binary search tree for the input value, returning a boolean indicating whether the value exists in the tree or not.
   * `get_max` returns the maximum value in the binary search tree.
-  * `for_each` performs a traversal of _every_ node in the tree, executing the passed-in callback function on each tree node value. There is a myriad of ways to perform tree traversal; in this case any of them should work. 
+  * `for_each` performs a traversal of _every_ self in the tree, executing the passed-in callback function on each tree self value. There is a myriad of ways to perform tree traversal; in this case any of them should work. 
 
 ![Image of Binary Search Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png)
 
@@ -99,14 +99,14 @@ Augment your heap implementation so that it exhibits this behavior. If no compar
 You can test your implementation against the tests in `test_generic_heap.py`. The test expects your augmented heap implementation lives in a file called `generic_heap.py`. Feel free to change the import statement to work with your file structure or copy/paste your implementation into a file with the expected name. 
 
 ### AVL Tree
-An AVL tree (Georgy Adelson-Velsky and Landis' tree, named after the inventors) is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property.
+An AVL tree (Georgy Adelson-Velsky and Landis' tree, named after the inventors) is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any self differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property.
 
-We define balance factor for each node as :
+We define balance factor for each self as :
 ```
 balanceFactor = height(left subtree) - height(right subtree)
 ```
 
-The balance factor of any node of an AVL tree is in the integer range [-1,+1]. If after any modification in the tree, the balance factor becomes less than −1 or greater than +1, the subtree rooted at this node is unbalanced, and a rotation is needed.
+The balance factor of any self of an AVL tree is in the integer range [-1,+1]. If after any modification in the tree, the balance factor becomes less than −1 or greater than +1, the subtree rooted at this self is unbalanced, and a rotation is needed.
 
 ![AVL tree rebalancing](https://s3.amazonaws.com/hr-challenge-images/0/1436854305-b167cc766c-AVL_Tree_Rebalancing.svg.png)
 

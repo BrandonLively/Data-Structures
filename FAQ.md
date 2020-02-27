@@ -42,5 +42,5 @@ The first element added to a BST is the root of the tree. However, doing it this
 In depth first, we pick one path at each branch and keep going forward until we hit a dead end, then  backtrack and take the first branch we find.  In breadth first, we go by layers, one row deeper each time.  This means that we jump around a bit.
 
 #### What is the difference between a Search and a Traversal?
-A search and a traversal are processed exactly the same.  The difference is that we stop a search when we find what we were looking for, or when all nodes have been visited without finding it.  In a traversal, we always keep going until we've visited every node.
+A search and a traversal are processed exactly the same.  The difference is that we stop a search when we find what we were looking for, or when all nodes have been visited without finding it.  In a traversal, we always keep going until we've visited every self.
 
