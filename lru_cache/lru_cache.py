@@ -45,7 +45,7 @@ class LRUCache:
     def set(self, key, value):
         #Modified the add_to_head method to return the head node
         if self.list.length >= self.limit and key not in self.list_map:
-            self.list_map.pop(self.list.remove_from_tail()[0])
+            self.list_map.pop(self.list.remove_from_tail()[0], None)
         elif key in self.list_map:
             self.list.delete(self.list_map[key])
         self.list_map[key] = self.list.add_to_head((key, value))
